@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        <link rel="stylesheet" href="../css/icons.css">
+        <link rel="stylesheet" href="../css/weather.css">
+        <link rel="stylesheet" href="../css/links.css">
+        <link rel="stylesheet" href="../css/password.css">
+        <link rel="stylesheet" href="../css/timedate.css">
+        <link rel="stylesheet" href="../css/index.css">
+        
+        
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" />
+
+        <title>Widgets</title>
+    </head>
+    <body>
+
+        <h1>Elige el widget al que quieres acceder</h1>
+
+        <div class="all-widgets">
+
+            <div class="container-left">
+
+                <div id="container-timedate">
+                    <div id="time"></div>
+                    <div id="date"></div>
+                    <div id="sms"></div>
+                </div>
+
+                <div id="container-weather">
+                <h2>Tiempo actual en <span id="city"></span>, <span id="country"></span></h2>
+                    <div id="weather-info">
+                        <img id="weather-icon" src="" alt="Estado del clima">
+                        <p id="temperature"></p>
+                        <p id="condition"></p>
+                        <p>Precipitaciones: <span id="precipitation"></span> mm</p>
+                        <p>Humedad: <span id="humidity"></span> %</p>
+                        <p>Viento: <span id="wind-speed"></span> km/h</p>
+                    </div>
+
+                    <div id="forecast">
+                        <h2>Previsión por horas</h2>
+                        <div id="hourly-forecast" class="forecast-carousel"></div>
+                    </div>
+                </div> 
+
+                </div>
+            <div class="container-right">
+                <div class="container-password">
+                    <label for="numInput">Número de caracteres</label>
+                    <input type="number" id="numInput" min="12" max="50" value="12" step="1">
+                    <button id="btngenpassword">Generar</button>
+                    <div id="password"></div>
+                </div>
+
+                <div id="container-links">
+                    <input type="text" id="link-name" placeholder="Nombre de tu enlace">
+                    <input type="text" id="link-url" placeholder="Pega aquí la URL">
+                    <button id="btnlink">Añadir enlace</button>
+                    <ul id="link-list"></ul>
+                </div>
+
+
+            </div>
+        </div>
+        <div id="icon-container">
+            <div id="icon">
+                <!--password-->
+                <a href="password.html" id="password-link" >
+                    <span class="material-symbols-outlined">password</span>
+                </a>
+                <!--timedate-->
+                <a href="timedate.html" id="timedate-link">
+                    <span class="material-symbols-outlined">watch</span>
+                </a>
+                <!--links-->
+                <a href="links.html" id="links-link">
+                    <span class="material-symbols-outlined">link</span>
+                </a>
+                <!--weather link-->
+                <a href="weather.html" id="weather">
+                    <span class="material-symbols-outlined">partly_cloudy_day</span>
+                </a>
+            </div>
+       </div>
+       <hr>
+        <!-- scripts -->
+        <script src="../js/background.js"></script>
+        <script src="../js/weather.js"></script>
+        <script src="../js/links.js"></script>
+        <script src="../js/password.js"></script>
+        <script src="../js/timedate.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=block" />
+    <link rel="stylesheet" href="../css/weather.css">
+    <link rel="stylesheet" href="../css/icons.css">
+</head>
+<body>
+    <h1>Estación Meteorológica</h1>
+    <div id="container-weather">
+        <h2>Tiempo actual en <span id="city"></span>, <span id="country"></span></h2>
+            <div id="weather-info">
+                <img id="weather-icon" src="" alt="Estado del clima">
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <p>Precipitaciones: <span id="precipitation"></span> mm</p>
+                <p>Humedad: <span id="humidity"></span> %</p>
+                <p>Viento: <span id="wind-speed"></span> km/h</p>
+            </div>
+            
+            <div id="forecast">
+                <h2>Previsión por horas</h2>
+                <div id="hourly-forecast" class="forecast-carousel"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="icon-container">
+        <!--home link-->
+        <a href="index.html" id="home-link">
+            <span class="material-symbols-outlined">home</span>
+        </a>
+        <!--timedate link-->
+        <a href="timedate.html" id="timedate-link">
+            <span class="material-symbols-outlined">watch</span>
+        </a>
+        <!--password link-->
+        <a href="password.html" id="password-link" >
+            <span class="material-symbols-outlined">password</span>
+        </a>
+
+        <!--links link-->
+        <a href="links.html" id="links-link">
+            <span class="material-symbols-outlined">link</span>
+        </a>
+    </div>  
+    <script src="../js/weather.js"></script>
+    <script src="../js/background.js"></script>
+</body>
+</html>

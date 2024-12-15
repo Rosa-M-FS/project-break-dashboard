@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+#container-links {
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    max-width: 500px;
+    width: 100%; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px; 
+}
+
+
+h1 {
+    color: #ffffff;
+    font-size: 3rem; 
+    font-weight:100; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 
+                 0 0 25px rgba(255, 255, 255, 0.8), 
+                 0 0 5px rgba(255, 255, 255, 0.6); 
+    letter-spacing: 1px;
+}
+/* Estilo de los inputs */
+input {
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px); 
+    width: 92%; /* Ancho completo */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 2px solid #bd2c74;
+    border-radius: 5px; 
+ 
+    color: #333; 
+}
+
+input:focus {
+    border-color: #bd2c74; 
+    outline: none;
+}
+
+/* Estilo del botón de agregar */
+#btnlink {
+    width: 100%;
+    padding: 12px;
+    background-color: #eb3691; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color:#bd2c74; 
+}
+
+/* Estilo de la lista de enlaces */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Estilo de cada item de la lista */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bd2c74;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+/* Nombre del enlace (no clicable) */
+li span {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    flex-grow: 1; 
+}
+
+/* Enlace (URL) */
+a {
+    color: #bd2c74;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Estilo del botón de eliminar (x) */
+.btnDelete {
+    width: 2rem;
+    height:2rem;
+    background-color: #eb3691; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; 
+}
+
+.btnDelete:hover {
+    background-color: #bd2c74;
+}
+
